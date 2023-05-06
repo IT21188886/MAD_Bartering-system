@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="650dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="All Details"
+        android:textSize="40sp"
+        android:fontFamily="@font/acme"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:gravity="center">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doctorRecycleView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/doctor_item" />
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="630dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:fontFamily="@font/acme"
+            android:layout_marginLeft="130dp"
+            android:backgroundTint="#877676"
+            android:text="Log out" />
+
+
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

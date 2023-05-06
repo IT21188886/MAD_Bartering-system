@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backnow"
+    android:orientation="vertical"
+    tools:context=".ViewDatas">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/acme"
+        android:text="Add New Details"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgDoctor"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/uploadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/black"
+            android:text="Upload"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="9dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameTxt"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/input"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="9dp"
+        android:text="price"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/priceTxt"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/input"
+        android:layout_gravity="center"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="9dp"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/addressTxt"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/input"
+        android:layout_gravity="center"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D5CCCC"
+            android:src="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D5CCCC"
+            android:src="@drawable/ic_baseline_edit_note_24" />
+
+        <ImageButton
+            android:id="@+id/viewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D5CCCC"
+            android:src="@drawable/ic_baseline_view_list_24" />
+
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#D5CCCC"
+            android:src="@drawable/ic_baseline_exit_to_app_24" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/vehicleDot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Vehicle"
+                    android:textSize="15dp"
+                    android:checked="false"
+
+                    android:textColor="@color/black"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/propertyDot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+
+                    android:text="Property"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/deviceDot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="Electronic"
+                    android:checked="false"
+
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/fashioDot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+
+                    android:text="Fashion"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sportsDot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Sport"
+                    android:textSize="15dp"
+                    android:checked="false"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="93dp"
+                    android:layout_marginLeft="40dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/serviceDot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service"
+                    android:textSize="15dp"
+                    android:checked="false"
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/aclonica"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:textSize="19dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
